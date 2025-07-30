@@ -21,18 +21,22 @@ RAGforGeeks-ChatBot/
 │── README.md                            # Project documentation 📚
 ```
 
+---
+
 
 ## 💡 Tech Stack 🛠️
-•	Python 🐍 (Core programming language for backend logic)
-•	Llama 2 (GGML) 🦙 (Large Language Model used for answering queries locally)
-•	LangChain 🔗 (Framework for implementing RAG — Retrieval Augmented Generation)
-•	FAISS 🔍 (For storing and searching vector embeddings efficiently)
-•	ChromaDB 🗂️ (Optional vector store library used by LangChain)
-•	CTransformers ⚡ (Lightweight LLM inference for GGML models)
-•	Streamlit 🌐 (Frontend UI framework to interact with the chatbot)
-•	Groq API 🚀 (For high-speed LLM inference using GroqCloud)
-•	dotenv 🔐 (To manage API keys securely via environment variables)
+-	**Python** 🐍 (Core programming language for backend logic)
+-	**Llama 2 (GGML)** 🦙 (Large Language Model used for answering queries locally)
+-	**LangChain** 🔗 (Framework for implementing RAG — Retrieval Augmented Generation)
+-	**FAISS** 🔍 (For storing and searching vector embeddings efficiently)
+-	**ChromaDB** 🗂️ (Optional vector store library used by LangChain)
+-	**CTransformers** ⚡ (Lightweight LLM inference for GGML models)
+-	**Streamlit** 🌐 (Frontend UI framework to interact with the chatbot)
+-	**Groq API** 🚀 (For high-speed LLM inference using GroqCloud)
+-	**dotenv** 🔐 (To manage API keys securely via environment variables)
 
+
+---
 
 ## ⚙️ Setup & Installation for RAGforGeeks 🧠💬
 Follow these steps to set up and run your RAG-based chatbot:
