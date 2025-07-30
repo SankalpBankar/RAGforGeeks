@@ -64,8 +64,8 @@ os.environ["GROQ_API_KEY"] = "your-groq-api-key"
 ### 4️⃣ Load the LLM (LLaMA3) 🦙
 The code uses LangChain + Groq to load the model:
 ```sh
-from langchain_groq import ChatGroq\n
-llm = ChatGroq(\n
+from langchain_groq import ChatGroq
+llm = ChatGroq(
     groq_api_key=os.environ["GROQ_API_KEY"],
     model_name="llama3-8b-8192"
 )
