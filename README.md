@@ -1,7 +1,8 @@
 # 📚RAGforGeeks 🤖🔍 👓
 A powerful Retrieval-Augmented Generation (RAG) assistant designed to provide accurate and contextual answers from GeeksforGeeks Nation SkillUp content.
 
-📁 Project Directory Structure 🧠💬
+
+##📁 Project Directory Structure 🧠💬
 RAGforGeeks-ChatBot/
 
 ├── backend/
@@ -19,9 +20,7 @@ RAGforGeeks-ChatBot/
 ├── README.md                    # Project overview 📘
 
 
-
-
-💡 Tech Stack 🛠️
+##💡 Tech Stack 🛠️
 •	Python 🐍 (Core programming language for backend logic)
 •	Llama 2 (GGML) 🦙 (Large Language Model used for answering queries locally)
 •	LangChain 🔗 (Framework for implementing RAG — Retrieval Augmented Generation)
@@ -33,9 +32,8 @@ RAGforGeeks-ChatBot/
 •	dotenv 🔐 (To manage API keys securely via environment variables)
 
 
-⚙️ Setup & Installation for RAGforGeeks 🧠💬
+##⚙️ Setup & Installation for RAGforGeeks 🧠💬
 Follow these steps to set up and run your RAG-based chatbot:
-
 1️⃣ Clone the Repository 📥
 git clone https://github.com/SankalpBankar/RAGforGeeks.git
 cd RAGforGeeks
@@ -57,11 +55,12 @@ llm = ChatGroq(
     groq_api_key=os.environ["GROQ_API_KEY"],
     model_name="llama3-8b-8192"
 )
+
 5️⃣ Run Your Application 🚀
 Ensure you have all backend files and Streamlit app ready. Then run:
 streamlit run app.py
 
-🛠️ Troubleshooting 🚨
+##🛠️ Troubleshooting 🚨
 •	API Key Error
 Set your key using: 
 os.environ["GROQ_API_KEY"] = "your-api-key"
