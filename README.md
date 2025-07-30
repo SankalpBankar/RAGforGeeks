@@ -81,6 +81,8 @@ os.environ["GROQ_API_KEY"] = "your-api-key"
 ```
 
 •	FAISS Index Empty or Missing
+
+
 Run the ```sh initialize_faiss.py ``` script to embed and store documents.
 
 
