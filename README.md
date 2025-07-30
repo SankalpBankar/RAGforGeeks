@@ -37,7 +37,7 @@ RAGforGeeks-ChatBot/
 Follow these steps to set up and run your RAG-based chatbot:
 
 1️⃣ Clone the Repository 📥
-git clone https://github.com/your-username/RAGforGeeks.git
+git clone https://github.com/SankalpBankar/RAGforGeeks.git
 cd RAGforGeeks
 
 2️⃣ Install Dependencies 📦
