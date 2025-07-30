@@ -1,26 +1,28 @@
-# 📚RAGforGeeks 🤖🔍 👓\n
-A powerful Retrieval-Augmented Generation (RAG) assistant designed to provide accurate and contextual answers from GeeksforGeeks Nation SkillUp content.\n
+# 📚RAGforGeeks 🤖🔍 👓
+A powerful Retrieval-Augmented Generation (RAG) assistant designed to provide accurate and contextual answers from GeeksforGeeks Nation SkillUp content.
 
 
-##📁 Project Directory Structure 🧠💬\n\n
+## 📁 Project Directory Structure 🧠💬
+
+```
 RAGforGeeks-ChatBot/
-
-├── backend/
-│   ├── models/                   # Store downloaded LLM (e.g., LLaMA2) 🧠\n
-│   ├── vectorstores/            # Vector DB for storing embeddings 📦\n
-│   │   └── db_faiss/            # FAISS index files 📁\n
-│   ├── model.py                 # LLM + retrieval logic using LangChain 🛠️\n
-│   ├── initialize_faiss.py      # FAISS setup script ⚙️\n
+│── backend/
+│   │── models/                         # Stores the Llama 2 model (download separately) 🧠
+│   │── vectorstores/                    # Stores FAISS database 🗄️
+│   │   └── db_faiss/                     # FAISS index files 📁
+│   │── model.py                         # Main backend logic (LLM, FAISS retrieval) 🔧
+│   └── initialize_faiss.py              # Script to initialize FAISS (if needed) ⚙️
 │
-├── frontend/
-│   └── app.py                   # Streamlit UI for chatbot 💻\n
+│── frontend/
+│   │── app.py                           # Streamlit web interface for chatbot 🖥️
 │
-├── setup.txt                    # LLM model setup instructions 📝\n
-├── requirements.txt             # Python dependencies 📦\n
-├── README.md                    # Project overview 📘\n
+│── setup.txt                            # Instructions to download the Llama 2 model 📝
+│── requirements.txt                      # Dependencies for the project 📦
+│── README.md                            # Project documentation 📚
+```
 
 
-##💡 Tech Stack 🛠️\n
+## 💡 Tech Stack 🛠️
 •	Python 🐍 (Core programming language for backend logic)\n
 •	Llama 2 (GGML) 🦙 (Large Language Model used for answering queries locally)\n
 •	LangChain 🔗 (Framework for implementing RAG — Retrieval Augmented Generation)\n
@@ -32,7 +34,7 @@ RAGforGeeks-ChatBot/
 •	dotenv 🔐 (To manage API keys securely via environment variables)\n
 
 
-##⚙️ Setup & Installation for RAGforGeeks 🧠💬\n
+## ⚙️ Setup & Installation for RAGforGeeks 🧠💬\n
 Follow these steps to set up and run your RAG-based chatbot:\n
 1️⃣ Clone the Repository 📥\n
 git clone https://github.com/SankalpBankar/RAGforGeeks.git\n
@@ -45,7 +47,7 @@ pip install langchain groq chromadb tiktoken langchain-groq langchain-community 
 3️⃣ Configure Environment 🔐\n
 Set your GROQ API key securely using an environment variable:\n
 import os\n
-os.environ["GROQ_API_KEY"] = "your-groq-api-key"\n
+os.environ["GROQ_API_KEY"] = "your-groq-api-key"
 (Or use .env with python-dotenv if running locally.)\n
 
 4️⃣ Load the LLM (LLaMA3) 🦙\n
@@ -54,13 +56,13 @@ from langchain_groq import ChatGroq\n
 llm = ChatGroq(\n
     groq_api_key=os.environ["GROQ_API_KEY"],\n
     model_name="llama3-8b-8192"\n
-)\n
+)
 
 5️⃣ Run Your Application 🚀\n
 Ensure you have all backend files and Streamlit app ready. Then run:\n
 streamlit run app.py\n
 
-##🛠️ Troubleshooting 🚨\n
+## 🛠️ Troubleshooting 🚨\n
 •	API Key Error\n
 Set your key using:\n 
 os.environ["GROQ_API_KEY"] = "your-api-key"\n
